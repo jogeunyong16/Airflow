@@ -5,7 +5,7 @@ from airflow.sdk import DAG
 
 with DAG(
     dag_id="dags_conn_test",
-    schedule="None",  
+    schedule="* * * * *",  
     start_date=pendulum.datetime(2025, 11, 1, tz="Asia/Seoul"),
     catchup=False,
 ) as dag:
